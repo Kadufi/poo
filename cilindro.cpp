@@ -24,7 +24,7 @@ void Cilindro::dobra_H_DoCilindro(double h){
      heigth = 2 * h;
 }
 
-Cilindro::Cilindro(double h, double r){
+Cilindro::Cilindro(double r, double h){
     base_radius = r;
     heigth = h;
 }    
