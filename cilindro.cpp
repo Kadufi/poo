@@ -1,32 +1,48 @@
 #include"calsses1.h"
+#include<iostream>
 
 double Cilindro::volumeDoCilindro(){
-    return PI * base_radius * base_radius * heigth;
+    return PI * (*p_r) * (*p_r) * (*p_h);
  }
       
 void Cilindro::heightDoCilindro(double h){
-    heigth = h;
+    *p_h = h;
 }
 
 void Cilindro::r_baseDoCilindro(double r){
-     base_radius = r;
+     *p_r = r;
 }
            
 double Cilindro::hDoCilindro(){
-     return heigth;
+     return *p_h;
 }
 
 double Cilindro::rDoCilindro(){
-    return base_radius;
+    return *p_r;
+}
+
+std::string Cilindro::nDoCilindro(){
+    return nome;
 }
 
 void Cilindro::dobra_H_DoCilindro(double h){
      heigth = 2 * h;
 }
+Cilindro::Cilindro(){
+    nome = "nunhum";
+    p_h = new double;
+    *p_h = 1;
+    p_r = new double;
+    *p_r = 1;
+}
 
-Cilindro::Cilindro(double r, double h){
-    base_radius = r;
-    heigth = h;
-}    
+Cilindro::Cilindro(double r, double h,std::string n){
+    nome = n;
+    p_h = new double;
+    *p_h = h;
+    p_r = new double;
+    *p_r = r;
+
+} 
 
  

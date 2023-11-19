@@ -14,10 +14,13 @@ int main(){
     std::cout << "r:" << p_c1->rDoCilindro() << std::endl;
 
 
-    Cilindro *p_c2 = new Cilindro(100,2); // Heap, sempre quando começãr assim, já faça o delete dele no final, eu acho... sla.
+    Cilindro *p_c2 = new Cilindro(100 , 2 ,"Cadu"); // Heap, sempre quando começãr assim, já faça o delete dele no final, eu acho... sla.
     std::cout << "volume: "<< p_c2->volumeDoCilindro() <<std::endl;
     std::cout << "h:" << p_c2->hDoCilindro() << std::endl;
     std::cout << "r:" << p_c2->rDoCilindro() << std::endl;
+    p_c2->heightDoCilindro(4);
+    std::cout << "volume: "<< p_c2->volumeDoCilindro() <<std::endl;
+    std::cout << "h:" << p_c2->hDoCilindro() << std::endl;
 
     delete p_c2;
 

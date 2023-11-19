@@ -2,6 +2,7 @@
 #define CALSSES1_H
 
 #include"constantes.h"
+#include<iostream>
 
 class Cilindro {
 
@@ -18,17 +19,22 @@ class Cilindro {
         double hDoCilindro();
 
         double rDoCilindro();
+        
+        std::string nDoCilindro();
 
         void dobra_H_DoCilindro(double h);
      
 
-        Cilindro()=default;
+        Cilindro();
 
-        Cilindro(double h, double r);
+        Cilindro(double h, double r,std::string n);
 
     private:
-        double base_radius{1};
-        double heigth{1};
+        double heigth;
+        double base_radius;
+        double *p_h{nullptr};
+        double *p_r{nullptr};
+        std::string nome;
     
 };
 
