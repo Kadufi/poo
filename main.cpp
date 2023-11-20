@@ -22,6 +22,9 @@ int main(){
     std::cout << "volume: "<< p_c2->volumeDoCilindro() <<std::endl;
     std::cout << "h:" << p_c2->hDoCilindro() << std::endl;
 
+
+    std::cout << "done\n";
+
     delete p_c2;
 
     return 0;

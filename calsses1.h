@@ -28,6 +28,8 @@ class Cilindro {
         Cilindro();
 
         Cilindro(double h, double r,std::string n);
+        
+        ~Cilindro();
 
     private:
         double heigth;

@@ -29,20 +29,28 @@ void Cilindro::dobra_H_DoCilindro(double h){
      heigth = 2 * h;
 }
 Cilindro::Cilindro(){
+    std::cout << "construtor chamado \n";
     nome = "nunhum";
     p_h = new double;
     *p_h = 1;
     p_r = new double;
     *p_r = 1;
+    
 }
 
 Cilindro::Cilindro(double r, double h,std::string n){
+    std::cout << "construtor chamado \n";
     nome = n;
     p_h = new double;
     *p_h = h;
     p_r = new double;
     *p_r = r;
-
+    
 } 
+
+Cilindro::~Cilindro(){
+    delete p_h,p_r;
+    std::cout << "destructor chamado \n";
+}
 
  
