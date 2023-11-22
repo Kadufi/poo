@@ -1,7 +1,7 @@
 #include <iostream>
 #include"calsses1.h"
-
-
+ //g++ -o dale main.cpp cilindro.cpp
+//./dale.exe
 int main(){
     std::cout << PI << std::endl;
     Cilindro cilindro1; // objetos
